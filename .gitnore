@@ -1,0 +1,5 @@
+__pychache__/
+
+# Build
+*.egg-info
+build
