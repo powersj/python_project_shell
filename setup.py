@@ -6,6 +6,7 @@ setup and configuration
 
 import os
 from setuptools import setup
+from setuptools import find_packages
 
 
 NAME = 'my_package'
@@ -30,7 +31,7 @@ setup(
     author_email=METADATA['__author_email__'],
     url=METADATA['__url__'],
     license=METADATA['__license__'],
-    packages=[NAME],
+    packages=find_packages('.'),
     install_requirements=REQUIREMENTS,
     zip_safe=True,
     entry_points={
